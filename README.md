@@ -31,10 +31,10 @@ Select the created IAM Role and click Update IAM Role.
 
 🔹 Step 3: Provision the Kubernetes Cluster
 Clone the repository:
-bash
-Copy
-Edit
+```
 git clone https://github.com/Aj7Ay/k8s-mario.git
+
+```
 cd k8s-mario
 Make the script executable and run it:
 bash
