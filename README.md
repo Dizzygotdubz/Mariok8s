@@ -5,8 +5,6 @@ Hey folks! Remember the thrill of '90s gaming? Let’s step back in time and rel
 This guide walks you through deploying the Super Mario game on Amazon Elastic Kubernetes Service (EKS). By leveraging Kubernetes, we can ensure scalability, reliability, and seamless management of the game on AWS.
 
 📌 Prerequisites
-Before you begin, ensure you have the following:
-
 An Ubuntu Instance
 IAM Role (with necessary permissions)
 Terraform installed on your instance
@@ -15,7 +13,6 @@ AWS CLI and Kubectl installed on your instance
 🚀 Deployment Steps
 
 🔹 Step 1: Launch an Ubuntu Instance
-Sign in to your AWS Console.
 Navigate to the EC2 Dashboard and click Launch Instance.
 Select an AMI → Choose an Ubuntu image.
 Choose Instance Type → Select t2.micro.
@@ -72,14 +69,14 @@ bash
 Copy
 Edit
 terraform apply --auto-approve
-🕐 Wait for about 10 minutes for the deployment to complete.
+
 
 🔹 Step 4: Update Kubernetes Configuration
 Set up your kubeconfig:
 bash
 Copy
 Edit
-aws eks update-kubeconfig --name EKS_CLOUD --region ap-south-1
+aws eks update-kubeconfig --name EKS_CLOUD --region us-east-2
 Navigate back to the k8s-mario directory:
 bash
 Copy
